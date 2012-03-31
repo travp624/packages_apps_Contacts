@@ -951,7 +951,7 @@ public class ContactDetailFragment extends Fragment implements FragmentKeyListen
             if (group.getGroupId() == groupId) {
                 if (!group.isDefaultGroup() && !group.isFavorites()) {
                     String title = group.getTitle();
-                    if (!groups.contains(title)) {
+                    if (!groups.contains(title) && !groups.contains(title)) {
                         groups.add(title);
                     }
                 }

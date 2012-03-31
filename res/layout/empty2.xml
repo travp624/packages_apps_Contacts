@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2010 The Android Open Source Project
+<!-- Copyright (C) 2012 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,11 +13,17 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <dimen name="editor_type_label_width">180dip</dimen>
-    <dimen name="editor_round_button_padding_left">8dip</dimen>
-    <dimen name="editor_round_button_padding_right">8dip</dimen>
-    <dimen name="group_editor_side_padding">16dip</dimen>
-    <dimen name="quick_contact_photo_container_height">400dip</dimen>
-    <dimen name="contact_picker_contact_list_min_height">650dip</dimen>
-</resources>
+
+<!-- Hack for show empty hidden menu item without using android:icon.
+     See dialtact_options.xml for more detail.
+
+     TODO: figure out better way -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_dial_action_search"
+        android:visibility="invisible"/>
+</FrameLayout>

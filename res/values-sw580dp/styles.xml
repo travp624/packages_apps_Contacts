@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <resources>
-    <style name="PeopleTheme" parent="@android:style/Theme.Holo">
+    <style name="PeopleTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/ContactsActionBarStyle</item>
         <item name="android:actionBarWidgetTheme">@style/ContactsActionBarTheme</item>
         <item name="android:actionBarItemBackground">@drawable/action_bar_item_background</item>
@@ -56,7 +56,7 @@
         <item name="favorites_padding_bottom">0dip</item>
     </style>
 
-    <style name="ContactPickerTheme" parent="@android:Theme.Holo.Dialog">
+    <style name="ContactPickerTheme" parent="@android:Theme.Holo.Light.Dialog">
         <item name="android:windowSoftInputMode">adjustResize</item>
         <item name="android:listViewStyle">@style/ListViewStyle</item>
         <item name="list_item_height">?android:attr/listPreferredItemHeight</item>
@@ -97,7 +97,7 @@
         <item name="android:layout_height">match_parent</item>
     </style>
 
-    <style name="ContactListFilterTheme" parent="@android:Theme.Holo.Dialog">
+    <style name="ContactListFilterTheme" parent="@android:Theme.Holo.Light.Dialog">
         <item name="android:windowCloseOnTouchOutside">true</item>
         <item name="android:listViewStyle">@style/ListViewStyle</item>
     </style>
@@ -117,7 +117,7 @@
         <item name="android:background">@android:color/transparent</item>
     </style>
 
-    <style name="NonPhoneDialogTheme" parent="@android:Theme.Holo.Dialog">
+    <style name="NonPhoneDialogTheme" parent="@android:Theme.Holo.Light.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
@@ -132,7 +132,7 @@
         <item name="android:layout_height">200dip</item>
     </style>
 
-    <style name="BackgroundOnlyTheme" parent="@android:Theme.Holo">
+    <style name="BackgroundOnlyTheme" parent="@android:Theme.Holo.Light">
         <item name="android:windowBackground">@null</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowAnimationStyle">@null</item>
