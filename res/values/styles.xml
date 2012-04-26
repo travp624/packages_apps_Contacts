@@ -249,7 +249,7 @@
     </style>
 
     <style name="ContactDetailItemType">
-	<item name="android:windowBackground">@drawable/background_dial_holo_dark</item>
+        <item name="android:windowBackground">@drawable/background_dial_holo_dark</item>
         <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
         <item name="android:singleLine">true</item>
