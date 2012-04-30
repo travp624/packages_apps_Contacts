@@ -84,7 +84,7 @@
     </style>
 
     <style name="DetailActivityTheme" parent="@android:style/Theme.Holo">
-		<item name="android:background>#ff000000</item>
+		<item name="android:background">#ff000000</item>
         <item name="android:actionBarStyle">@style/ContactsActionBarStyle</item>
         <item name="android:actionBarItemBackground">@drawable/action_bar_item_background</item>
         <item name="android:actionBarWidgetTheme">@style/ContactsActionBarTheme</item>
