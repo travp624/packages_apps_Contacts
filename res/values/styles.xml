@@ -84,7 +84,7 @@
     </style>
 
     <style name="DetailActivityTheme" parent="@android:style/Theme.Holo">
-		<item name="android:windowBackground">@drawable/background_dial_holo_dark</item>
+		<item name="android:background>#ff000000</item>
         <item name="android:actionBarStyle">@style/ContactsActionBarStyle</item>
         <item name="android:actionBarItemBackground">@drawable/action_bar_item_background</item>
         <item name="android:actionBarWidgetTheme">@style/ContactsActionBarTheme</item>
@@ -129,7 +129,7 @@
     </style>
 
     <style name="PeopleTheme" parent="@android:style/Theme.Holo">
-		<item name="android:windowBackground">@drawable/background_dial_holo_dark</item>
+		<item name="android:background">#ff000000</item>
         <item name="android:actionBarStyle">@style/ContactsActionBarStyle</item>
         <item name="android:actionBarItemBackground">@drawable/action_bar_item_background</item>
         <item name="android:actionBarWidgetTheme">@style/ContactsActionBarTheme</item>
@@ -249,7 +249,7 @@
     </style>
 
     <style name="ContactDetailItemType">
-        <item name="android:windowBackground">@drawable/background_dial_holo_dark</item>
+        <item name="android:background">#ff000000</item>
         <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
         <item name="android:singleLine">true</item>
