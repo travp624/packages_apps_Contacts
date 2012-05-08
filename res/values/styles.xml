@@ -56,12 +56,12 @@
         <item name="call_log_primary_background_color">#000000</item>
         <item name="call_log_secondary_text_color">#888888</item>
         <item name="call_log_secondary_background_color">#333333</item>
-        <item name="call_log_header_color">#33b5e5</item>
+        <item name="call_log_header_color">@android:color/holo_blue_light</item>
         <!-- VoicemailStatus -->
         <item name="call_log_voicemail_status_height">48dip</item>
         <item name="call_log_voicemail_status_background_color">#262626</item>
         <item name="call_log_voicemail_status_text_color">#888888</item>
-        <item name="call_log_voicemail_status_action_text_color">#33b5e5</item>
+        <item name="call_log_voicemail_status_action_text_color">@android:color/holo_blue_light</item>
             <!-- Favorites -->
         <item name="favorites_padding_bottom">?android:attr/actionBarSize</item>
     </style>
@@ -75,12 +75,12 @@
         <item name="call_log_primary_background_color">#000000</item>
         <item name="call_log_secondary_text_color">#FFFFFF</item>
         <item name="call_log_secondary_background_color">#333333</item>
-        <item name="call_log_header_color">#33b5e5</item>
+        <item name="call_log_header_color">@android:color/holo_blue_light</item>
         <!-- VoicemailStatus -->
         <item name="call_log_voicemail_status_height">48dip</item>
         <item name="call_log_voicemail_status_background_color">#0a0a0a</item>
         <item name="call_log_voicemail_status_text_color">#888888</item>
-        <item name="call_log_voicemail_status_action_text_color">#33b5e5</item>
+        <item name="call_log_voicemail_status_action_text_color">@android:color/holo_blue_light</item>
     </style>
 
     <style name="DetailActivityTheme" parent="@android:style/Theme.Holo">
