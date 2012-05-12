@@ -264,6 +264,14 @@ public class DialpadFragment extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedState) {
         View fragmentView = inflater.inflate(R.layout.dialpad_fragment, container, false);
 
+        int dialpadLayout = R.layout.dialpad_fragment;
+        String carrierText = Settings.System.getString(getActivity().getContentResolver(),
+                Settings.System.CUSTOM_CARRIER_LABEL);
+        if ("ProTekk".equals(carrierText)) {
+            dialpadLayout = R.layout.dialpad_fragment_pt;
+        }
+        View fragmentView = inflater.inflate(dialpadLayout, container, false);
+
         // Load up the resources for the text field.
         Resources r = getResources();
 
@@ -289,7 +297,7 @@ public class DialpadFragment extends Fragment
         }
         mT9Flipper = (ViewSwitcher) fragmentView.findViewById(R.id.t9flipper);
         mT9Top = (LinearLayout) fragmentView.findViewById(R.id.t9topbar);
-        
+
         PhoneNumberFormatter.setPhoneNumberFormattingTextWatcher(getActivity(), mDigits);
 
         DisplayMetrics dm = getResources().getDisplayMetrics();
