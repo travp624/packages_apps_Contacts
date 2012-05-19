@@ -26,6 +26,7 @@
     <string name="t9_state_summary">在拨号界面开启T9搜索</string>
     <string name="t9_dial_click_title">拨打选中的联系人</string>
     <string name="t9_dial_click_summary">在T9中拨打选中的联系人</string>
+    <string name="t9_add_to_contacts">添加到联系人</string>
     <string name="contactsList" msgid="8661624236494819731">"通讯录"</string>
     <string name="shortcutContact" msgid="749243779392912958">"联系人"</string>
     <string name="shortcutDialContact" msgid="746622101599186779">"直接拨打"</string>
