@@ -37,6 +37,7 @@ public final class ContactsPreferences extends ContentObserver {
     private Context mContext;
     private int mSortOrder = -1;
     private int mDisplayOrder = -1;
+    private int mViewMode = -1;
     private ChangeListener mListener = null;
     private Handler mHandler;
 
@@ -114,6 +115,40 @@ public final class ContactsPreferences extends ContentObserver {
                 ContactsContract.Preferences.DISPLAY_ORDER, displayOrder);
     }
 
+    public boolean isViewModeUserChangeable() {
+        return mContext.getResources().getBoolean(R.bool.config_view_mode_user_changeable);
+    }
+
+    public int getDefaultViewMode() {
+        if (mContext.getResources().getBoolean(R.bool.config_default_view_mode_standard)) {
+            return ContactsContract.Preferences.VIEW_MODE_STANDARD;
+        } else {
+            return ContactsContract.Preferences.VIEW_MODE_COMPACT;
+        }
+    }
+
+    public int getViewMode() {
+        if (!isViewModeUserChangeable()) {
+            return getDefaultViewMode();
+        }
+
+        if (mViewMode == -1) {
+            try {
+                mViewMode = Settings.System.getInt(mContext.getContentResolver(),
+                        ContactsContract.Preferences.VIEW_MODE);
+            } catch (SettingNotFoundException e) {
+                mViewMode = getDefaultViewMode();
+            }
+        }
+        return mViewMode;
+    }
+
+    public void setViewMode(int ViewMode) {
+        mViewMode = ViewMode;
+        Settings.System.putInt(mContext.getContentResolver(),
+                ContactsContract.Preferences.VIEW_MODE, ViewMode);
+    }
+
     public void registerChangeListener(ChangeListener listener) {
         if (mListener != null) unregisterChangeListener();
 
@@ -123,6 +158,7 @@ public final class ContactsPreferences extends ContentObserver {
         // observer was unregistered.
         mDisplayOrder = -1;
         mSortOrder = -1;
+        mViewMode = -1;
 
         final ContentResolver contentResolver = mContext.getContentResolver();
         contentResolver.registerContentObserver(
@@ -131,6 +167,9 @@ public final class ContactsPreferences extends ContentObserver {
         contentResolver.registerContentObserver(
                 Settings.System.getUriFor(
                         ContactsContract.Preferences.DISPLAY_ORDER), false, this);
+        contentResolver.registerContentObserver(
+                Settings.System.getUriFor(
+                        ContactsContract.Preferences.VIEW_MODE), false, this);
     }
 
     public void unregisterChangeListener() {
@@ -149,6 +188,7 @@ public final class ContactsPreferences extends ContentObserver {
             public void run() {
                 mSortOrder = -1;
                 mDisplayOrder = -1;
+                mViewMode = -1;
                 if (mListener != null) mListener.onChange();
             }
         });

@@ -1327,6 +1327,15 @@
     <!-- An allowable value for the "view names as" contact display option  -->
     <string name="display_options_view_family_name_first">Family name first</string>
 
+    <!-- Label of the "list view display mode" contact display option -->
+    <string name="display_options_view_mode">List view display mode</string>
+
+    <!-- An allowable value for the "list view display mode" contact display option  -->
+    <string name="display_options_view_mode_standard">Standard view</string>
+
+    <!-- An allowable value for the "list view display mode" contact display option  -->
+    <string name="display_options_view_mode_compact">Compact view</string>
+
     <!-- Gray hint displayed in the search field in Contacts when empty -->
     <string name="search_bar_hint">Search contacts</string>
 

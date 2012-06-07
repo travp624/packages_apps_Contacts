@@ -94,6 +94,12 @@
     <!-- If true, the default sort order is primary (i.e. by given name) -->
     <bool name="config_default_display_order_primary">true</bool>
 
+    <!-- If true, an option is shown in Display Options UI to choose a view mode -->
+    <bool name="config_view_mode_user_changeable">true</bool>
+
+    <!-- If true, the default view mode is standard -->
+    <bool name="config_default_view_mode_standard">true</bool>
+
     <!-- If true, the order of name fields in the editor is primary (i.e. given name first) -->
     <bool name="config_editor_field_order_primary">true</bool>
 

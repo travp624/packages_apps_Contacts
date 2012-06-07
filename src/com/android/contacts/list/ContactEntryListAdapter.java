@@ -60,6 +60,7 @@ public abstract class ContactEntryListAdapter extends IndexerListAdapter {
     private TextWithHighlightingFactory mTextWithHighlightingFactory;
     private int mDisplayOrder;
     private int mSortOrder;
+    private int mViewMode;
     private boolean mNameHighlightingEnabled;
 
     private boolean mDisplayPhotos;
@@ -241,6 +242,14 @@ public abstract class ContactEntryListAdapter extends IndexerListAdapter {
 
     public void setSortOrder(int sortOrder) {
         mSortOrder = sortOrder;
+    }
+
+    public int getViewMode() {
+        return mViewMode;
+    }
+
+    public void setViewMode(int viewMode) {
+        mViewMode = viewMode;
     }
 
     public void setPhotoLoader(ContactPhotoManager photoLoader) {
