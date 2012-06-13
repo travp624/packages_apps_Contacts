@@ -574,4 +574,7 @@
     <string name="t9_dial_click_title">Volat zvolenému kontaktu</string>
     <string name="t9_dial_click_summary">Volat zvolenému kontaktu z T9 hledání</string>
     <string name="t9_add_to_contacts">Přidat do kontaktů</string>
+    <string name="display_options_view_mode">Režim zobrazení seznamu</string>
+    <string name="display_options_view_mode_standard">Standardní zobrazení</string>
+    <string name="display_options_view_mode_compact">Kompaktní zobrazení</string>
 </resources>
