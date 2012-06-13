@@ -566,7 +566,7 @@
     <string name="dialog_voicemail_not_ready_message" msgid="4384716252789515378">"Chcete-li nastavit hlasovou schránku, přejděte do části Menu &gt; Nastavení."</string>
     <!-- AOKP special translations -->
     <string name="t9_sort_title">Metoda řazení T9</string>
-    <string name="t9_sort_summary">Volba fitrlování výsledků T9 hledání</string>
+    <string name="t9_sort_summary">Volba filtrování výsledků T9 hledání</string>
     <string name="t9_sort_name">Nejprve hledat podle jména</string>
     <string name="t9_sort_number">Nejprve hledat podle čísla</string>
     <string name="t9_state_title">Zapnout číselník T9</string>
